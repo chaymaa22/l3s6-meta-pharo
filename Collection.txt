@@ -1,0 +1,20 @@
+
+
+- soit la collection : 
+col := #(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5)
+
+Q1)-L'expression qui rend la liste des bombres positifs 
+col collect: #abs
+> #(1 2 3 44 0 5 6 4 5 3 22 1 2 5)
+
+Q2)- L’expression qui rend la liste des carrés des nombres
+col collect: [:i | i**2]
+> #(1 4 9 1936 0 25 36 16 25 9 484 1 4 25)
+
+Q3)-L’expression qui rend la somme des nombres
+- est ce que les collections en pharo sont indicés ?
+- Pour faire la facon d'une facon récursive.
+
+Q4)-L'expression qui rend le premier nombre négatif 
+col detect: [ :i | i<0 ]
+> -44
